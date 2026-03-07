@@ -15,7 +15,7 @@ RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 ## Demo
 
 - Setup animation: 
-https://github.com/user-attachments/assets/6cc4b25f-3994-44a6-9097-cdc62b117406
+https://github.com/user-attachments/assets/5eb53d64-d70e-479a-b6a4-3ed6ece25c10
 
 - Waveform demo:
 https://github.com/user-attachments/assets/80457c1c-6252-4934-953d-d8e9c80b8a95
