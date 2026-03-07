@@ -8,19 +8,20 @@ RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 
 ## Prototype
 
-![prototype](VanillaSynth_V2.png)
+![prototype](docs/VanillaSynth_V2.jpg)
 
 ---
 
 ## Demo
 
-Setup animation
+- Setup animation: [VanillaSynth_V2_setup_animation.mov](docs/VanillaSynth_V2_setup_animation.mov)
+- Waveform demo: [VanillaSynth_V2_waveform.mov](docs/VanillaSynth_V2_waveform.mov)
 
-(video coming soon)
+---
 
-Waveform demo
+## Schematic
 
-(video coming soon)
+[VanillaSynth_V2_Schematic.pdf](docs/VanillaSynth_V2_Schematic.pdf)
 
 ---
 
@@ -55,18 +56,6 @@ The goal of the project is a stable, expressive and simple hardware synthesizer.
 
 ---
 
-## Hardware
-
-Main components
-
-Raspberry Pi Pico 2 — MCU  
-PCM5102A — I2S DAC  
-6N138 / 6N136 — MIDI input  
-74HC4051 — analog multiplexer  
-SSD1306 — OLED display  
-
----
-
 ## Pinout
 
 GP1   MIDI IN  
@@ -94,13 +83,11 @@ GP19  DAC MUTE
 
 Main firmware
 
-VanillaSynth_V2.ino
+[VanillaSynth_V2.ino](firmware/VanillaSynth_V2.ino)
 
 Additional module
 
-MidiQueue.h
-
-Developed using Arduino IDE with the RP2040 core.
+[MidiQueue.h](firmware/MidiQueue.h)
 
 ---
 
@@ -117,8 +104,3 @@ CERN Open Hardware License v2
 ## Author
 
 GolemMilk
-
-DIY synthesizer experiments and electronic music tools.
-
-GitHub  
-https://github.com/GolemMilk
