@@ -27,7 +27,7 @@ https://github.com/user-attachments/assets/80457c1c-6252-4934-953d-d8e9c80b8a95
 
 ## Schematic
 
-[VanillaSynth_V2_Schematic.pdf](docs/VanillaSynth_V2_Schematic.pdf)
+[VanillsSynth_V2_Schematic.pdf](https://github.com/user-attachments/files/25811106/VanillsSynth_V2_Schematic.pdf)
 
 ---
 
