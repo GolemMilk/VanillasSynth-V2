@@ -14,8 +14,8 @@ RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 
 ## Demo
 
-- Setup animation: [VanillaSynth_V2_setup_animation.m4v](docs/VanillaSynth_V2_setup_animation.m4v)
-- Waveform demo: [VanillaSynth_V2_waveform.m4v](docs/VanillaSynth_V2_waveform.m4v)
+- Setup animation: [VanillaSynth_V2_setup_animation.mp4](docs/VanillaSynth_V2_setup_animation.mp4)
+- Waveform demo: [VanillaSynth_V2_waveform.mp4](docs/VanillaSynth_V2_waveform.mp4)
 
 ---
 
