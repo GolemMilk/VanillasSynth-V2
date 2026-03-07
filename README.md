@@ -41,6 +41,31 @@ Core0 handles UI and MIDI processing while Core1 runs the realtime audio engine.
 
 The goal of the project is a stable, expressive and simple hardware synthesizer.
 
+## Development Environment
+
+Board  
+Raspberry Pi Pico 2 (RP2040)
+
+IDE  
+Arduino IDE
+
+Board package  
+Arduino-Pico (Earle Philhower core)
+
+Tested version  
+rp2040 core 5.5.0
+
+## Libraries
+
+Required libraries:
+
+- I2S (included in Arduino-Pico core)
+- Wire (standard Arduino library)
+- Adafruit SSD1306
+- Adafruit GFX
+
+Install these libraries via the Arduino Library Manager.
+
 ---
 
 ## Features
