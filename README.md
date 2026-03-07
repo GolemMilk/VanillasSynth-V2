@@ -7,6 +7,7 @@ RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 ---
 
 ## Prototype
+![IMG_3556](https://github.com/user-attachments/assets/33f7a1f7-55f6-4210-85ad-de059b2ebb44)
 
 ![prototype](docs/VanillaSynth_V2.jpg)
 
