@@ -1,96 +1,98 @@
-VanillaSynth V2
+# VanillaSynth V2
 
 Raspberry Pi Pico 2 based polyphonic digital synthesizer.
 
-RP2040 dual-core architecture, I2S DAC output, MIDI input and realtime FX.
+RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 
-⸻
+---
 
-Overview
+## Prototype
+
+![prototype](VanillaSynth_V2.png)
+
+---
+
+## Demo
+
+Setup animation
+
+(video coming soon)
+
+Waveform demo
+
+(video coming soon)
+
+---
+
+## Overview
 
 VanillaSynth V2 is a DIY polyphonic synthesizer built around the Raspberry Pi Pico 2.
 
-It is designed to be simple, stable and expressive while running entirely on a microcontroller.
+It runs entirely on a microcontroller using the RP2040 dual core architecture.
 
-Features include polyphonic oscillators, analog-style drift, filters and realtime effects.
+Core0 handles UI and MIDI processing while Core1 runs the realtime audio engine.
 
-⸻
+The goal of the project is a stable, expressive and simple hardware synthesizer.
 
-Features
+---
 
-• Raspberry Pi Pico 2
-• 4 voice polyphonic virtual analog synthesizer
-• I2S audio output (PCM5102A DAC)
-• MIDI input (UART + 6N138 / 6N136)
-• 74HC4051 analog multiplexer for knob expansion
-• SSD1306 OLED display UI
-• Dual-core architecture
+## Features
 
-⸻
+• Raspberry Pi Pico 2  
+• 4-voice polyphonic virtual analog synthesizer  
+• I2S audio output (PCM5102A DAC)  
+• MIDI input (UART + 6N138 / 6N136)  
+• 74HC4051 analog multiplexer for knob expansion  
+• SSD1306 OLED interface  
 
-Effects
+### Effects
 
-• Phaser
-• Ladder filter
-• Tap ping-pong delay
-• Octaver
-• Soft clip limiter
+• Phaser  
+• Ladder filter  
+• Tap ping-pong delay  
+• Octaver  
+• Soft clip limiter  
 
-⸻
+---
 
-Hardware
+## Hardware
 
 Main components
 
-Raspberry Pi Pico 2 — Main MCU
-PCM5102A — I2S DAC
-6N138 / 6N136 — MIDI input
-74HC4051 — Analog multiplexer
-SSD1306 OLED — Display
+Raspberry Pi Pico 2 — MCU  
+PCM5102A — I2S DAC  
+6N138 / 6N136 — MIDI input  
+74HC4051 — analog multiplexer  
+SSD1306 — OLED display  
 
-⸻
+---
 
-Controls
+## Pinout
 
-8 potentiometers via 74HC4051
+GP1   MIDI IN  
 
-A — Attack
-B — Tone (LPF cutoff)
-C — Tail / Release
-D — Volume
-E — Phaser mix
-F — Ladder mix
-G — Delay mix
-H — Octaver mix
+GP10  I2S BCLK  
+GP11  I2S LRCK  
+GP12  I2S DATA  
 
-Waveforms selectable via hardware switch.
+GP2   MUX S0  
+GP3   MUX S1  
+GP4   MUX S2  
 
-Sine
-Saw
-Square
-Triangle
+GP26  MUX analog input  
 
-⸻
+GP6   OLED SDA  
+GP7   OLED SCL  
 
-Audio Architecture
+GP14  Wave switch  
 
-44.1kHz audio
-16bit stereo output
-I2S DAC
+GP19  DAC MUTE  
 
-RP2040 dual core separation
+---
 
-Core0
-UI / MIDI / OLED
+## Firmware
 
-Core1
-Audio engine
-
-⸻
-
-Firmware
-
-Main firmware file
+Main firmware
 
 VanillaSynth_V2.ino
 
@@ -98,38 +100,25 @@ Additional module
 
 MidiQueue.h
 
-Developed with
+Developed using Arduino IDE with the RP2040 core.
 
-Arduino IDE
-RP2040 core
+---
 
-⸻
+## License
 
-License
-
-Firmware
+Firmware  
 MIT License
 
-Hardware
+Hardware  
 CERN Open Hardware License v2
 
-⸻
+---
 
-Author
+## Author
 
 GolemMilk
 
 DIY synthesizer experiments and electronic music tools.
 
-GitHub
+GitHub  
 https://github.com/GolemMilk
-
-⸻
-
-Notes
-
-This project is experimental DIY hardware.
-
-Feel free to modify, build and improve.
-
-Pull requests welcome.
