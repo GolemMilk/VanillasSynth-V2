@@ -14,7 +14,7 @@ RP2040 dual-core architecture, I2S DAC audio output, MIDI input and realtime FX.
 
 ## Demo
 
-_Video:
+- Video:
 https://youtu.be/2JtVhN9wDcU
 
 - Setup animation: 
